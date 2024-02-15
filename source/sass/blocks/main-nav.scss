@@ -354,6 +354,10 @@
     @include active {
       color: $color-tangerine-2;
     }
+
+    &_active {
+      background-color: $color-tangerine !important;
+    }
   }
 
   &__contacts {

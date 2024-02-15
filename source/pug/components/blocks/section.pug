@@ -9,6 +9,7 @@ mixin section(data)
           .section__heading
             +icon("icon-figure", 24, 28)
             h2.title.title--h2.section__title!=data.title
+
         if (data.content)
           .section__content
             if (data.content.text)
@@ -18,8 +19,10 @@ mixin section(data)
               ul
                 each item in data.content.list
                   li!=item
+
         if (data.button)
           +btn({href: data.button.href, text: data.button.text}).section__button
+
         if (data.list)
           ul.list-reset.section__list
             each item in data.list
@@ -28,10 +31,12 @@ mixin section(data)
                   +category-card(item)
                 if (item.type === "advantage")
                   +advantage-card(item)
+
         if (data.form)
           .section__form
             +feedback({
               title: "Хотите узнать больше?"
             })
+
         if block
           block

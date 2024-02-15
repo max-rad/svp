@@ -1,0 +1,105 @@
+extends ../components/base/layout
+
+block variables
+    - const title = "СН-РУС Сервис"
+    - const wrapperMods = ""
+    - const hasHeader = true
+    - const headerMods = ""
+    - const hasFooter = true
+    - const footerMods = ""
+    - const currentUrl = "catalog.html"
+
+block main
+    main
+      +cover()
+      +products({
+        isActive: true,
+        list: [
+            {
+                href: "#",
+                image: {
+                    src: "card",
+                    format: "png",
+                    width: "162",
+                    height: "320",
+                    alt: "image"
+                },
+                title: "DQ-20BSA-CH",
+                capacity: "200 тонн",
+                depth: "3000 м",
+                moment: "35 кНм"
+            },
+            {
+                href: "#",
+                image: {
+                    src: "card",
+                    format: "png",
+                    width: "162",
+                    height: "320",
+                    alt: "image"
+                },
+                title: "DQ-20BSA-CH",
+                capacity: "200 тонн",
+                depth: "3000 м",
+                moment: "35 кНм"
+            },
+            {
+                href: "#",
+                image: {
+                    src: "card",
+                    format: "png",
+                    width: "162",
+                    height: "320",
+                    alt: "image"
+                },
+                title: "DQ-20BSA-CH",
+                capacity: "200 тонн",
+                depth: "3000 м",
+                moment: "35 кНм"
+            },
+            {
+                href: "#",
+                image: {
+                    src: "card",
+                    format: "png",
+                    width: "162",
+                    height: "320",
+                    alt: "image"
+                },
+                title: "DQ-20BSA-CH",
+                capacity: "200 тонн",
+                depth: "3000 м",
+                moment: "35 кНм"
+            },
+            {
+                href: "#",
+                image: {
+                    src: "card",
+                    format: "png",
+                    width: "162",
+                    height: "320",
+                    alt: "image"
+                },
+                title: "DQ-20BSA-CH",
+                capacity: "200 тонн",
+                depth: "3000 м",
+                moment: "35 кНм"
+            },
+            {
+                href: "#",
+                image: {
+                    src: "card",
+                    format: "png",
+                    width: "162",
+                    height: "320",
+                    alt: "image"
+                },
+                title: "DQ-20BSA-CH",
+                capacity: "200 тонн",
+                depth: "3000 м",
+                moment: "35 кНм"
+            }
+        ]
+      })
+
+block modals

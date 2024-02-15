@@ -5,6 +5,7 @@ import {initHeader} from './modules/header/init-header';
 import {initModals} from './modules/modal/init-modals';
 import {initPhoneMask} from './modules/init-phone-mask';
 import {initPhoneValidation} from './modules/init-phone-validation';
+import {initInfoSlider} from './modules/init-info-slider';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,5 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordion();
     initPhoneMask();
     initPhoneValidation();
+    initInfoSlider();
   });
 });
