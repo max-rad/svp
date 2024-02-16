@@ -2933,6 +2933,20 @@ button,
   text-align: end;
 }
 
+.section__net {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 43% auto;
+  grid-template-columns: 43% auto;
+  -webkit-column-gap: 115px;
+  -moz-column-gap: 115px;
+  column-gap: 115px;
+}
+
+.section__part p {
+  margin: 0;
+}
+
 .section__heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3293,6 +3307,19 @@ button,
   color: #f28e06;
   border: 1px solid #f28e06;
   border-radius: 4px;
+}
+
+.block__title {
+  margin: 0;
+}
+
+.block__list {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.block__list li::marker {
+  content: "- ";
 }
 
 @media (min-width: 1023px) {

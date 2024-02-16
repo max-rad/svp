@@ -405,6 +405,19 @@
     }
   }
 
+  &__net {
+    display: grid;
+    grid-template-columns: 43% auto;
+    column-gap: 115px;
+  }
+
+  &__part {
+
+    p {
+      margin: 0;
+    }
+  }
+
   &__heading {
     display: flex;
     align-items: baseline;

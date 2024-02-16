@@ -1,0 +1,22 @@
+mixin block(data)
+	section.section
+		.container
+			.section__wrapper
+				.section__net
+					.section__part
+						.section__heading.block__title
+							+icon("icon-figure", 24, 28)
+							h2.title.title--h2.section__title!=data.title
+						p!=data.blockValueFirst
+						br
+						if (data.list)
+							span В настоящее время компания ООО «СН-РУС СЕРВИС» производит:
+							ul.list-reset.block__list
+								each item in data.list
+									li!=item
+							br
+						p!=data.blockValueSecond
+						br
+						if (data.blockValueThird)
+							p!=data.blockValueThird
+					+img("content/company", "photo", "png", "680", "600", "image")
