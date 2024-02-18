@@ -2659,6 +2659,7 @@ button,
 }
 
 .section__wrapper {
+  border: 1px solid blue;
   position: relative;
   padding: 80px 0;
 }
@@ -2934,6 +2935,7 @@ button,
 }
 
 .section__net {
+  border: 1px solid red;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 43% auto;
@@ -2941,6 +2943,10 @@ button,
   -webkit-column-gap: 115px;
   -moz-column-gap: 115px;
   column-gap: 115px;
+}
+
+.section__part {
+  border: 1px solid yellow;
 }
 
 .section__part p {
@@ -3448,7 +3454,7 @@ button,
 
   .section__title {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 
   .section__table {
@@ -3468,6 +3474,21 @@ button,
 
   .section__table img {
     width: 100%;
+  }
+
+  .section__net {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    row-gap: 40px;
+    padding-bottom: 60px;
   }
 
   .section__list {
@@ -4074,6 +4095,19 @@ button,
   .section__table table tr td:nth-child(even) {
     padding-left: 5px;
     width: 117px;
+  }
+
+  .section__net {
+    padding-bottom: 40px;
+    row-gap: 30px;
+  }
+
+  .section__part {
+    font-size: 16px;
+  }
+
+  .section__part p {
+    font-size: 16px;
   }
 
   .section__content {

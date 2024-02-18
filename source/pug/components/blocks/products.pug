@@ -29,17 +29,15 @@ mixin products(data)
                     .section__integrations
                         .section__heading
                             +icon("icon-figure", 24, 28)
-                            h2.title.title--h2.section__title Продукция
+                            h2.title.title--h2 Продукция
                         ul.main-nav__sublist
                             each item in headerLinks
                                 li.main-nav__subitem
                                     a.main-nav__sublink(class={"main-nav__sublink_active" : item.isActive} href=item.href)!=item.text
                                         +icon("icon-chevron-down", 16, 16)
 
-
                     .section__link ссылка на yuotube
                         a
-
 
                     .section__catalog
                         .section__about
