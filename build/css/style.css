@@ -2812,6 +2812,7 @@ button,
   row-gap: 40px;
   list-style: none;
   margin-top: 54px;
+  margin-bottom: 0;
 }
 
 .section__image-wrapper {
@@ -3404,6 +3405,10 @@ button,
   transform: rotate(-90deg);
   margin: 0 7px;
   color: #808080;
+}
+
+.vacancy__paragraph {
+  width: 917px;
 }
 
 @media (min-width: 1023px) {

@@ -219,6 +219,7 @@
     row-gap: 40px;
     list-style: none;
     margin-top: 54px;
+    margin-bottom: 0;
 
     @include vp-1279 {
       margin-top: 60px;

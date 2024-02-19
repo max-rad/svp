@@ -1,0 +1,31 @@
+extends ../components/base/layout
+
+block variables
+	- const title = "СН-РУС Сервис"
+	- const wrapperMods = ""
+	- const hasHeader = true
+	- const headerMods = ""
+	- const hasFooter = true
+	- const footerMods = ""
+	- const currentUrl = "job.html"
+
+block main
+	main
+		+bread-crumbs({
+			isStatic: true,
+			company: true,
+			list: [
+				{
+					href: "#",
+					text: "Главная страница"
+				},
+				{
+					href: "#",
+					text: "Вакансии"
+				}
+			]
+		})
+		+vacancy({
+			title: "Вакансии",
+			description: "Система менеджмента ООО «СН-РУС СЕРВИС» определяет структуру и принципы того, как компания осуществляет свою деятельность по всему миру в отношении качества наших услуг и продуктов"
+		})
