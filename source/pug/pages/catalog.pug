@@ -11,6 +11,18 @@ block variables
 
 block main
     main
+      +bread-crumbs({
+        list: [
+            {
+                href: "#",
+                text: "Главная страница"
+            },
+            {
+                href: "#",
+                text: "Системы верхнего привода"
+            }
+        ]
+      })
       +cover()
       +products({
         isActive: true,

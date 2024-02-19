@@ -1,0 +1,78 @@
+.breadcrumbs {
+	width: 100%;
+	list-style: none;
+	font-size: 14px;
+
+	position: absolute;
+	padding: 0;
+	margin: 0;
+
+	&_static {
+		position: static;
+	}
+
+	&__wrapper {
+		border: 1px solid red;
+		display: flex;
+		padding-top: 80px;
+		padding-bottom: 50px;
+
+		@include vp-1023 {
+			padding-top: 30px;
+			padding-bottom: 40px;
+		}
+
+		@include vp-767 {
+			padding-top: 20px;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&_company {
+
+			@include vp-767 {
+				flex-direction: row;
+			}
+		}
+
+		&_clients {
+			padding-bottom: 40px;
+
+			@include vp-1023 {
+				padding-top: 10px;
+			}
+	
+			@include vp-767 {
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	li {
+
+		a {
+			color: #808080;
+		}
+
+		svg {
+			vertical-align: middle;
+		}
+
+		&:last-of-type {
+
+			a {
+				color: $color-tangerine;
+			}
+
+			svg {
+				display: none;
+			}
+		}
+	}
+
+	svg {
+		transform: rotate(-90deg);
+		margin: 0 7px;
+		color: #808080;
+	}
+}

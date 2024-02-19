@@ -11,7 +11,19 @@ block variables
 
 block main
     main
-      +cover()
+      +bread-crumbs({
+        isStatic: true,
+        list: [
+            {
+                href: "#",
+                text: "Главная страница"
+            },
+            {
+                href: "#",
+                text: "Мобильные буровые установки"
+            }
+        ]
+      })
       +products({
         type: "Installations",
         isActive: true,

@@ -11,6 +11,21 @@ block variables
 
 block main
     main
+        +bread-crumbs({
+            isStatic: true,
+            company: true,
+            clients: true,
+            list: [
+                {
+                    href: "#",
+                    text: "Главная страница"
+                },
+                {
+                    href: "#",
+                    text: "Клиенты"
+                }
+            ]
+        })
         +gallery({
             title: "Наши клиенты",
             description: "Оборудование ООО «СН-РУС СЕРВИС» является современным, надежным и безопасным, и  обеспечивает долгосрочную ценность для бизнеса наших клиентов по всему миру",

@@ -2664,6 +2664,10 @@ button,
   padding: 80px 0;
 }
 
+.section__wrapper_reset {
+  padding: 0 0 80px;
+}
+
 .section__columns {
   display: -ms-grid;
   display: grid;
@@ -3352,6 +3356,56 @@ button,
   list-style: none;
 }
 
+.breadcrumbs {
+  width: 100%;
+  list-style: none;
+  font-size: 14px;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs_static {
+  position: static;
+}
+
+.breadcrumbs__wrapper {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.breadcrumbs__wrapper_clients {
+  padding-bottom: 40px;
+}
+
+.breadcrumbs li a {
+  color: #808080;
+}
+
+.breadcrumbs li svg {
+  vertical-align: middle;
+}
+
+.breadcrumbs li:last-of-type a {
+  color: #f28e06;
+}
+
+.breadcrumbs li:last-of-type svg {
+  display: none;
+}
+
+.breadcrumbs svg {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  margin: 0 7px;
+  color: #808080;
+}
+
 @media (min-width: 1023px) {
   .main-nav__item.menu-item-has-children:has(.focus-visible) .main-nav__link {
     color: #f28e06;
@@ -3872,6 +3926,10 @@ button,
     padding: 60px 0;
   }
 
+  .section__wrapper_reset {
+    padding: 0 0 60px;
+  }
+
   .section__columns {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3932,6 +3990,15 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .breadcrumbs__wrapper {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .breadcrumbs__wrapper_clients {
+    padding-top: 10px;
   }
 }
 
@@ -4075,6 +4142,10 @@ button,
 
   .section__wrapper {
     padding: 40px 0;
+  }
+
+  .section__wrapper_reset {
+    padding: 0 0 40px;
   }
 
   .section__about {
@@ -4224,6 +4295,28 @@ button,
 
   .gallery__list {
     row-gap: 40px;
+  }
+
+  .breadcrumbs__wrapper {
+    padding-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .breadcrumbs__wrapper_company {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .breadcrumbs__wrapper_clients {
+    padding-bottom: 30px;
   }
 }
 
