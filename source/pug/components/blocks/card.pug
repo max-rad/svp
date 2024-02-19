@@ -14,15 +14,15 @@ mixin card(data)
             span!=data.capacity
         .card__row
           if data.type
-            p Максимальная нагрузка на крюке:
+            p Максимальная<br>нагрузка на крюке:
             span!=data.workflow
           else
             p Глубина бурения:
             span!=data.depth
         .card__row
           if data.type
-            p Скорость подъема крюка без нагрузки:
-            span!=data.workflow
+            p Скорость подъема<br>крюка без нагрузки:
+            span!=data.speed
           else
             p Крутящий момент:
             span!=data.moment

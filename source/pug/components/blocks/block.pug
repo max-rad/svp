@@ -3,18 +3,15 @@ mixin block(data)
 		.container
 			if (data.type == "left")
 				.section__wrapper
-					.section__net
+					.section__net.section__net_left
 						+img("content/company", "photo", "png", "680", "600", "image")
 						.section__part
 							.section__heading.block__title
 								+icon("icon-figure", 24, 28)
 								h2.title.title--h2.section__title!=data.title
-							p!=data.blockValueFirst
+							p.block__paragraph!=data.blockValueFirst
 							br
 							p!=data.blockValueSecond
-
-
-
 
 			else
 				if (data.hasWrapper)
@@ -28,11 +25,12 @@ mixin block(data)
 								br
 								p!=data.blockValueSecond
 								br
-								if (data.blockValueThird)
+								if (data.blockValueThird && data.thirdValueBold)
+									p.block__paragraph!=data.blockValueThird
+								else
 									p!=data.blockValueThird
 							+img("content/company", "photo", "png", "680", "600", "image")
-
-							
+	
 				else
 					.section__net
 						.section__part

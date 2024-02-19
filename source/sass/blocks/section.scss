@@ -412,6 +412,10 @@
     grid-template-columns: 43% auto;
     column-gap: 115px;
 
+    &_left {
+      grid-template-columns: auto 43%;
+    }
+
     
     @include vp-1439 {
       display: flex;

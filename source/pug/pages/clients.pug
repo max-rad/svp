@@ -1,0 +1,53 @@
+extends ../components/base/layout
+
+block variables
+    - const title = "СН-РУС Сервис"
+    - const wrapperMods = ""
+    - const hasHeader = true
+    - const headerMods = ""
+    - const hasFooter = true
+    - const footerMods = ""
+    - const currentUrl = "clients.html"
+
+block main
+    main
+        +gallery({
+            title: "Наши клиенты",
+            description: "Оборудование ООО «СН-РУС СЕРВИС» является современным, надежным и безопасным, и  обеспечивает долгосрочную ценность для бизнеса наших клиентов по всему миру",
+            list: [
+                {
+                    path: "content/gallery",
+                    src: "client",
+                    format: "png",
+                    width: "320",
+                    height: "320",
+                    alt: "image"
+                },
+                {
+                    path: "content/gallery",
+                    src: "client",
+                    format: "png",
+                    width: "320",
+                    height: "320",
+                    alt: "image"
+                },
+                {
+                    path: "content/gallery",
+                    src: "client",
+                    format: "png",
+                    width: "320",
+                    height: "320",
+                    alt: "image"
+                },
+                                {
+                    path: "content/gallery",
+                    src: "client",
+                    format: "png",
+                    width: "320",
+                    height: "320",
+                    alt: "image"
+                },
+            ]
+        })
+
+block modals
