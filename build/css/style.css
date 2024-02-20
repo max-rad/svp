@@ -2659,7 +2659,6 @@ button,
 }
 
 .section__wrapper {
-  border: 1px solid blue;
   position: relative;
   padding: 80px 0;
 }
@@ -3371,7 +3370,6 @@ button,
 }
 
 .breadcrumbs__wrapper {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
