@@ -419,7 +419,6 @@
   }
 
   &__net {
-    border: 1px solid red;
     display: grid;
     grid-template-columns: 43% auto;
     column-gap: 115px;
@@ -444,7 +443,6 @@
   }
 
   &__part {
-    border: 1px solid yellow;
 
     @include vp-767 {
       font-size: 16px;

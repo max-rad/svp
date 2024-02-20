@@ -2939,7 +2939,6 @@ button,
 }
 
 .section__net {
-  border: 1px solid red;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 43% auto;
@@ -2952,10 +2951,6 @@ button,
 .section__net_left {
   -ms-grid-columns: auto 43%;
   grid-template-columns: auto 43%;
-}
-
-.section__part {
-  border: 1px solid yellow;
 }
 
 .section__part p {
@@ -3242,6 +3237,7 @@ button,
 }
 
 .cover {
+  margin-bottom: 80px;
   background-color: #BFBFBF;
   height: 372px;
 }
