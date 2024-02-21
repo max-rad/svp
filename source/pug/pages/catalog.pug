@@ -11,18 +11,18 @@ block variables
 
 block main
     main
-      +bread-crumbs({
+      +breadcrumbs({
         list: [
-            {
-                href: "#",
-                text: "Главная страница"
-            },
-            {
-                href: "#",
-                text: "Системы верхнего привода"
-            }
+          {
+            href: "#",
+            text: "Главная страница"
+          },
+          {
+            text: "Системы верхнего привода",
+            isActive: true
+          }
         ]
-      })
+      }).breadcrumbs--absolute
       +cover()
       +products({
         isActive: true,

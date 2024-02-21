@@ -1,8 +1,0 @@
-mixin bread-crumbs(data)
-	ul.breadcrumbs(class={"breadcrumbs_static" : data.isStatic})
-		.container
-			.breadcrumbs__wrapper(class={"breadcrumbs__wrapper_company" : data.company} class={"breadcrumbs__wrapper_clients" : data.clients})
-					each item in data.list
-						li
-							a(href=item.href)!=item.text
-							+icon("icon-chevron-down", 16, 16)

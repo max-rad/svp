@@ -11,19 +11,16 @@ block variables
 
 block main
     main
-        +bread-crumbs({
-            isStatic: true,
-            company: true,
-            clients: true,
+        +breadcrumbs({
             list: [
-                {
-                    href: "#",
-                    text: "Главная страница"
-                },
-                {
-                    href: "#",
-                    text: "Клиенты"
-                }
+              {
+                  href: "#",
+                  text: "Главная страница"
+              },
+              {
+                  href: "#",
+                  text: "Клиенты"
+              }
             ]
         })
         +gallery({
